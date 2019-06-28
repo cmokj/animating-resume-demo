@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.token.selector{
+    color: black;
+}
+.token.property{
+    color: black;
+}
+.token.comment {
+    color: black;
+}
+.token.punctuation{
+    color: black;
+}
+#wrapper {
+    display: flex;
+}
+#code-wrapper{
+    padding: 16px;
+    padding-right: 50px;
+    height: 100vh;
+    display: flex;
+    width: 40%;
+    margin: 0 auto;
+}
+#code {
+    overflow: hidden;
+    width: 100%;
+}
+#paper {
+    width: 57%;
+    height: 100vh;
+    padding: 16px;
+    padding-left: 50px;
+    display: flex;
+}
+#paper > .paperCon {
+    display: block;
+    overflow: auto;
+    background: #FAFAFA;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+}
+
+@keyframes breath {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+}
