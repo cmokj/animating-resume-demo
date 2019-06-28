@@ -42,11 +42,10 @@ function writeMd(code,fn){
 }
 
 function mdToHtml(fn){
-    let paperCon = document.querySelector('#paper > .paperCon');
-    paperCon.innerHTML = marked(paperCon);
+    let md = document.querySelector('#paper > .paperCon');
+    md.innerHTML = marked(md.innerHTML);
     fn.call();
 }
-
 
 var content = `/*
 * 面试官你好，
@@ -154,7 +153,9 @@ var md = `
 
 var content2 = `/*然后再把简历以 markdown 形式展示*/`
 
-var content3 = `/*
+var content3 = `
+
+/*
 * 这就是我的简历，
 * 谢谢观看！
 */`
